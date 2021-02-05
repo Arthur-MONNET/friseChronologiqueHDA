@@ -1,0 +1,607 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Moyen-Âge</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width, height:device-height">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <style>
+            .body{
+                height: 100%;
+                width: 100%;
+            }
+            .dot { 
+                border-bottom: dotted 4px #423100; 
+                margin-top: 53px;
+            } 
+/*--------------------------------------------------site pour le slide: https://www.cssscript.com/pure-css-carousel-slidershow/#respond -----------------------------------------------*/
+        .carousel {
+          height: 1000px;
+          width: 100%;
+          overflow: hidden;
+          text-align: center;
+          position: relative;
+          margin-top: 50px;
+          padding: 0;
+        }
+        h2:checked{ color:red}
+        .carousel__controls, .carousel__slide, .carousel__activator { display: none; }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+          -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+        }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) { display: block; }
+
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) h4{ color: #e54c4c; font-size: 35px;}
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) div#cercle52{ display:block; }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) div#cercle5{ background-color: #e54c4c;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+          -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+        }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) { display: block; }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) h4{ color: #e54c4c; font-size: 35px;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) div#cercle42{ display:block;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) div#cercle4{ background-color: #e54c4c;}
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+          -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+        }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) { display: block; }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) h4{ color: #e54c4c; font-size: 35px;}
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) div#cercle32{ display:block; }
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) div#cercle3{ background-color: #e54c4c;}
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) { display: block; }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) h4{ color: #e54c4c; font-size: 35px;}
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) div#cercle22{ display:block; }
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) div#cercle2{ background-color: #e54c4c;}
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+        }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) { display: block; }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) h4{ color: #e54c4c; font-size: 35px; }
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) div#cercle12{display:block; }
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) div#cercle1{ background-color: #e54c4c;}
+        .carousel__control {
+          height: 30px;
+          width: 30px;
+          margin-top: -15px;
+          top: 50%;
+          position: absolute;
+          display: block;
+          cursor: pointer;
+          border-width: 5px 5px 0 0;
+          border-style: solid;
+          border-color: #9d9d03;
+          opacity: 0.35;
+          outline: 0;
+          z-index: 3;
+        }
+
+        .carousel__control:hover { opacity: 1; }
+
+        .carousel__control--forward {
+          left: 10px;
+          -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+        }
+        .menu{
+            top:-50px;
+            left:10px;
+            position: absolute;
+            display: block;
+            color: #6d6bd9; 
+            font-size: 50px;
+            cursor: pointer;
+            font-family: 'Poiret One', cursive;
+        }
+        h2 { 
+            color: #9d9d03; 
+            font-size: 50px;
+            width: 390px;
+            margin: 30px auto 20px auto;
+            font-family: Georgia, serif;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        a ~ p{
+            display:none;
+        }
+        .desc{
+            font-style: italic; 
+            
+        }
+        
+        .carousel__control--backward {
+          right: 10px;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        .carousel__indicators {
+          display: flex;
+          position: absolute;
+          top: 10px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        
+        .carousel__indicator {
+            height: 30px;
+        }
+        .cercle{
+            display: block;
+            height: 10px;
+            width: 10px;
+            background-color: #a6a6a6;
+            z-index: 2;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        h4{
+            top:5px;
+            height: 40px;
+            width: 100%;
+            color: #a6a6a6;
+            font-size: 30px;
+            z-index: 2;
+            cursor: pointer;
+            margin: 0 auto 0 auto;
+            font-family: 'Poiret One', cursive;
+        }
+        #cercle1{
+            margin-left: 50%;
+        }
+        #cercle12{
+            margin-left: 50%;
+            display:none;
+            background-color: #6d6bd9; width: 2500%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        #cercle2{
+            margin-left: 50%;
+        }
+        #cercle22{
+            margin-left: 50%;
+            display:none;
+            background-color: #6d6bd9; width: 242%;height: 6px; border-radius: 0; margin-top:2px;
+            
+        }
+        #cercle3{
+            margin-left: 50%;
+        }
+        #cercle32{
+            margin-left: 50%;
+            display:none;
+            background-color: #6d6bd9; width: 1000%;height: 6px; border-radius: 0; margin-top:2px;
+        }
+        #cercle4{
+            margin-left: 75%;
+        }
+        #cercle42{
+            margin-left: 75%;
+            display:none;
+            background-color: #6d6bd9; width: 63%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        #cercle5{
+            margin-left: 25%;
+        }
+        #cercle52{
+            margin-left: 25%;
+            display:none;
+            background-color: #6d6bd9; width: 200%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        
+        
+        #c1{
+            margin-left:2.75%;
+            width: 4,5%;
+        }
+        
+        #c2{
+            margin-left:54.5%;
+            width: 5%;
+        }
+        #c3{
+            margin-left:7%;
+            width: 4%;
+        }
+        #c4{
+            margin-left:4.5%;
+            width: 4%;
+        }
+        #c5{
+            margin-left:1.85%;
+            width: 4%;
+        }
+        
+        @media only screen and (max-width: 1050px) {
+            h4{
+                font-size: 20px;
+            }
+            .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) h4{ color: #e54c4c; font-size: 25px;}
+            .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) h4{ color: #e54c4c; font-size: 25px;}
+            .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) h4{ color: #e54c4c; font-size: 25px;}
+            .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) h4{ color: #e54c4c; font-size: 25px;}
+            .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) h4{ color: #e54c4c; font-size: 25px;}
+        }
+        @media only screen and (max-width: 1000px) {
+            body ul{
+                display: none;
+            }
+            
+        }
+        h4:hover { color: #da9c9c; }
+            
+        .carousel__track {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          -webkit-transition: -webkit-transform 0.5s ease 0s;
+          transition: -webkit-transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+        }
+
+        .carousel__track .carousel__slide { display: block; }
+
+        .carousel__track .carousel__slide:nth-of-type(1) {
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(2) {
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(3) {
+          -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(4) {
+          -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(5) {
+          -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+        }
+
+        .carousel__slide {
+            height: 100%;
+            right: 0;
+            position: absolute;
+            overflow-y: auto;
+            top: 0;
+            left: 0;
+        }
+
+        * { 
+            box-sizing: border-box; 
+        }
+
+        body {
+            background-color: #ebefdf;
+            text-align: center;
+            color: #111;
+        }
+
+        .carousel-container { 
+            display: block; 
+                              
+        }
+
+        .my-carousel {
+            margin-block-end: 0px;
+        }
+
+        .carousel__slide {
+          border-radius: 10px;
+          overflow: hidden;
+        }
+/*--------------------------------------------------------------------------------------contenu---------------------------------------------------------------------------------------*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||contenu||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #image1{
+            
+            margin:5% 50px auto 50px; 
+            height: 700px;
+        }
+        @media only screen and (max-width: 1100px) {
+            
+            #image1{ 
+                margin:10% 50px auto 50px; 
+                height: 500px;
+            }
+            
+        }
+        @media only screen and (max-width: 1000px) {
+            
+            #image1{ 
+                height: 400px;
+                margin:15% 50px auto 50px; 
+            }
+            
+        }
+        
+        .zone_text{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction:column;
+            align-items: flex-start;
+        }
+        h1 {
+          margin:100px auto 30px auto; 
+          text-align:center; 
+          color: #9d9d03;
+          font-size: 70px;
+        }
+        
+        
+        h5 { 
+            margin-left: 70px;
+            color: #6d6bd9; 
+            font-family: Georgia, serif;
+            font-size: 40px;
+            margin-block-end: 0px;
+        }
+        h6 { 
+            margin-block-end: 0px;
+            font-size: 35px;
+        }
+        .detail{
+            width: 500px;
+            text-align: left;
+        }
+        h3 {
+            font-size: 50px;
+        }
+
+        .carousel__slide:nth-of-type(1) {
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(2) {
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(3) {
+          
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(4) {
+          
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(5) {
+          
+          background-size: cover;
+          background-position: center;
+
+        }
+        @-webkit-keyframes 
+        carousel-show-slide {  from {
+         opacity: 0;
+        }
+
+        to { opacity: 1; }
+        }
+        @keyframes 
+        carousel-show-slide {  from {
+         opacity: 0;
+        }
+
+        to { opacity: 1; }
+        }
+        span{
+            color:  #e54c4c;
+        }
+
+
+        </style>
+        <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="carousel-container">
+            <p class="menu"><a href="menu.html" >MENU</a></p>
+            <h2><span>MOYEN</span>-ÂGE</h2>
+            <p class="desc">L'immense majorité de l'art qui nous est parvenu de cette époque relève du domaine du religieux.</p>
+            
+            <ul class="carousel my-carousel carousel--translate">
+                <input type="radio" name="carousel" id="1" checked="checked" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="2" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="3" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="4" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="5" class="carousel__activator"/>
+                <div class="carousel__controls">
+                  <label for="5" class="carousel__control carousel__control--forward"></label>
+                  <label for="2" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="1" class="carousel__control carousel__control--forward"></label>
+                  <label for="3" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="2" class="carousel__control carousel__control--forward"></label>
+                  <label for="4" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="3" class="carousel__control carousel__control--forward"></label>
+                  <label for="5" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="4" class="carousel__control carousel__control--forward"></label>
+                  <label for="1" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__track">
+                    <div class="carousel__slide">
+                        <h1>de <span>330</span> à <span>1453</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Art Byzantin</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">l'art bysantin résulte du développement du christianisme, leur style n'est plus du réalisme mais une représentation angélique de la vie sociale, représentations principalement  le divin. C'est donc un art religieux servant à transmettre l’idée du pouvoir et du mystère de dieu.</p>
+                                <h6>Type de réalisation:</h6>
+                                <p class="detail">C'est un art principalement composé de peintures murales comme &nbsp;<span>Le Christ Pantocrator</span>, de dorures et de mosaïques, généralement placé dans les églises.</p>
+                            </div>
+                            <img src='image/pantocrator.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>1000</span> à <span>1150</span></h1>
+                        
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Art Roman</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">L'art roman regroupe l'architecture romane, la sculpture et la peinture.Les larges surfaces murées et les voûtes de la période romane se sont prêtées facilement à la décoration murale.</p>
+                                
+                            </div>
+                            <img src='image/art_roman.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>1150</span> à <span>1500</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Art Gothique</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">L'art gothique est d'abord illustré par l'architecture, mais aussi par la sculpture, la peinture sur bois, le vitrail, et l'enluminure.L’art gothique est avant tout un courant au service de la religion chrétienne. Les images sont créées dans le but d’éduquer les fidèles qui ne savent ni lire ni écrire. L’art gothique transmet un ensemble de règles civiques et morales. Cela sert à conserver l’équilibre social. Il doit être simple et accessible à tous.</p>
+                                <h6>Caractéristiques principales:</h6>
+                                <p class="detail">Les couleurs vives de l’art gothique, souvent sur fond doré, contrastent avec l’absence de couleur du quotidien : au Moyen Âge, le peuple européen vit dans un monde brun, gris et marron. Seuls les vêtements des nobles et des religieux sont constitués de couleurs vives. L’inexistence de l’éclairage ne permet pas d’ajouter du volume aux peintures. Le réalisme dans les traits des personnages s’avère plutôt absent car l’identification d’un individu est signe d’orgueil. Les divers symboles suffisent à identifier les sujets. </p>
+                            </div>
+                            <img src='image/art_gothique.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1><span>1261</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Le christ pantocrator</h5>
+                                <h6>Lieu:</h6>
+                                <p class="detail">Basilique Sainte-Sophie, Istanbul</p>
+                                <h6>Date:</h6>
+                                <p class="detail">C'est une œuvre créée vers 1261 </p>
+                                <h6>Description:</h6>
+                                <p class="detail">Travail de peinture murale, et de mosaïque, soucis du détail et volonté de représenter le relief, «pantocrator» signifie le plus puissant, la main gauche correspond à l'évangile et la main droite la bénédiction, il y a une importance porté sur les expressions du visage, les traits des mains, le mouvement ainsi que la couleur des vêtements. Il y a donc volonté de représenter le relief.</p>
+                            </div>
+                            <img src='image/pantocrator.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1><span>1310</span></h1>
+                        
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Ognissanti Madonna</h5>
+                                <h6>Auteur:</h6>
+                                <p class="detail">Giotto di Bondone</p>
+                                <h6>Date:</h6>
+                                <p class="detail">C'est une œuvre créée vers 1310</p>
+                                <h6>Description:</h6>
+                                <p class="detail">Les proportions et les contenus sont conformes aux habitudes picturales des &nbsp;<span>Maestà</span>&nbsp; : fond d'or, composition centrale de la Vierge portant l'Enfant, assise sur un trône entouré d'anges et apôtres.</p>
+                            </div>
+                            <img src='image/ognissanti_madonna.jpg' id='image1'/>
+                        </article>
+                    </div>
+                </div>
+            <div class="carousel__indicators">
+                <label for="1" id="c1"class="carousel__indicator">
+                    <h4 >330</h4>
+                    <div class="cercle" id="cercle1"></div>
+                    <div id="cercle12"></div>
+                </label>
+                <label for="2" id="c2"class="carousel__indicator">
+                    <h4 >1000</h4>
+                    <div class="cercle" id="cercle2"></div>
+                    <div id="cercle22"></div>
+                </label>
+                <label for="3" id="c3"class="carousel__indicator">
+                    <h4 >1150</h4>
+                    <div class="cercle" id="cercle3"></div>
+                    <div id="cercle32"></div>
+                </label>
+                <label for="4" id="c4"class="carousel__indicator">
+                    <h4 >1261</h4>
+                    <div class="cercle" id="cercle4"></div>
+                </label>
+                <label for="5" id="c5"class="carousel__indicator">
+                    <h4 >1310</h4>
+                    <div class="cercle" id="cercle5"></div>
+                </label>
+                
+            </div>
+                <div class="dot"></div> 
+            </ul>
+        </div>
+    </body>
+</html>

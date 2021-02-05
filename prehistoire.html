@@ -1,0 +1,640 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Préhistoire</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width, height:device-height">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <style>
+            .body{
+                height: 100%;
+                width: 100%;
+            }
+            .dot { 
+                border-bottom: dotted 4px #423100; 
+                margin-top: 53px;
+            } 
+/*--------------------------------------------------site pour le slide: https://www.cssscript.com/pure-css-carousel-slidershow/#respond -----------------------------------------------*/
+        .carousel {
+          height: 1000px;
+          width: 100%;
+          overflow: hidden;
+          text-align: center;
+          position: relative;
+          margin-top: 50px;
+          padding: 0;
+        }
+        h2:checked{ color:red}
+        .carousel__controls, .carousel__slide, .carousel__activator { display: none; }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+          -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+        }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) { display: block; }
+
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) h4{ color: #d98e4e; font-size: 35px;}
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) div#cercle52{ display:block; }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) div#cercle5{ background-color: #d98e4e;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+          -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+        }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) { display: block; }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) h4{ color: #d98e4e; font-size: 35px;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) div#cercle42{ display:block;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) div#cercle4{ background-color: #d98e4e;}
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+          -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+        }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) { display: block; }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) h4{ color: #d98e4e; font-size: 35px;}
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) div#cercle32{ display:block; }
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) div#cercle3{ background-color: #d98e4e;}
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) { display: block; }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) h4{ color: #d98e4e; font-size: 35px;}
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) div#cercle22{ display:block; }
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) div#cercle2{ background-color: #d98e4e;}
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+        }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) { display: block; }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) h4{ color: #d98e4e; font-size: 35px; }
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) div#cercle12{display:block; }
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) div#cercle1{ background-color: #d98e4e;}
+        .carousel__control {
+          height: 30px;
+          width: 30px;
+          margin-top: -15px;
+          top: 50%;
+          position: absolute;
+          display: block;
+          cursor: pointer;
+          border-width: 5px 5px 0 0;
+          border-style: solid;
+          border-color: #dcdcc4;
+          opacity: 0.35;
+          outline: 0;
+          z-index: 3;
+        }
+
+        .carousel__control:hover { opacity: 1; }
+
+        .carousel__control--forward {
+          left: 10px;
+          -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+        }
+        .menu{
+            top:-50px;
+            left:10px;
+            position: absolute;
+            display: block;
+            color: #63b1b1; 
+            font-size: 50px;
+            cursor: pointer;
+            font-family: 'Poiret One', cursive;
+        }
+        h2 { 
+            color: #dcdcc4; 
+            font-size: 50px;
+            width: 390px;
+            margin: 30px auto 20px auto;
+            font-family: Georgia, serif;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        a ~ p{
+            display:none;
+        }
+        .desc{
+            font-style: italic; 
+            
+        }
+        
+        .carousel__control--backward {
+          right: 10px;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        .carousel__indicators {
+          display: flex;
+          position: absolute;
+          top: 10px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        
+        .carousel__indicator {
+            height: 30px;
+        }
+        .cercle{
+            display: block;
+            height: 10px;
+            width: 10px;
+            background-color: #a6a6a6;
+            z-index: 2;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        h4{
+            top:5px;
+            height: 40px;
+            width: 100%;
+            color: #a6a6a6;
+            font-size: 30px;
+            z-index: 2;
+            cursor: pointer;
+            margin: 0 auto 0 auto;
+            font-family: 'Poiret One', cursive;
+        }
+        #cercle1{
+            margin-left: 50%;
+        }
+        #cercle12{
+            margin-left: 50%;
+            display:none;
+            background-color: #63b1b1; width: 420%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        #cercle2{
+            margin-left: 50%;
+        }
+        #cercle22{
+            margin-left: 50%;
+            display:none;
+            background-color: #63b1b1; width: 200%;height: 6px; border-radius: 0; margin-top:2px;
+            
+        }
+        #cercle3{
+            margin-left: 50%;
+        }
+        #cercle32{
+            margin-left: 50%;
+            display:none;
+            background-color: #63b1b1; width: 432%;height: 6px; border-radius: 0; margin-top:2px;
+        }
+        #cercle4{
+            margin-left: 75%;
+        }
+        #cercle42{
+            margin-left: 75%;
+            display:none;
+            background-color: #63b1b1; width: 63%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        #cercle5{
+            margin-left: 25%;
+        }
+        #cercle52{
+            margin-left: 25%;
+            display:none;
+            background-color: #63b1b1; width: 200%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        
+        
+        #c1{
+            margin-left:6.5%;
+            width: 7%;
+        }
+        
+        #c2{
+            margin-left:24%;
+            width: 7%;
+        }
+        #c3{
+            margin-left:2.5%;
+            width: 7%;
+        }
+        #c4{
+            margin-left:17.5%;
+            width: 10%;
+        }
+        #c5{
+            margin-left:0.7%;
+            width: 10%;
+        }
+        @media only screen and (max-width: 1450px) {
+            #c4{
+                margin-left:15%;
+            }
+            #c5{
+                margin-left:5.7%;
+            }
+            #cercle4{
+                margin-left: 100%;
+            }
+            #cercle42{
+                margin-left: 100%;
+            }
+            #cercle5{
+                margin-left: 0%;
+            }
+            #cercle52{
+                margin-left: 0%;
+            }
+            
+        }
+        @media only screen and (max-width: 1050px) {
+            h4{
+                font-size: 20px;
+            }
+            .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) h4{ color: #d98e4e; font-size: 25px;}
+            .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) h4{ color: #d98e4e; font-size: 25px;}
+            .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) h4{ color: #d98e4e; font-size: 25px;}
+            .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) h4{ color: #d98e4e; font-size: 25px;}
+            .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) h4{ color: #d98e4e; font-size: 25px;}
+        }
+        @media only screen and (max-width: 1000px) {
+            body ul{
+                display: none;
+            }
+            
+        }
+        @media only screen and (min-width: 2600px) {
+            #c4{
+                margin-left:20%;
+            }
+            #c5{
+                margin-left:-4.3%;
+            }
+            #cercle4{
+                margin-left: 50%;
+            }
+            #cercle42{
+                margin-left: 50%;
+            }
+            #cercle5{
+                margin-left: 50%;
+            }
+            #cercle52{
+                margin-left: 50%;
+            }
+        }
+        h4:hover { color: #cfae91; }
+            
+        .carousel__track {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          -webkit-transition: -webkit-transform 0.5s ease 0s;
+          transition: -webkit-transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+        }
+
+        .carousel__track .carousel__slide { display: block; }
+
+        .carousel__track .carousel__slide:nth-of-type(1) {
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(2) {
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(3) {
+          -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(4) {
+          -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(5) {
+          -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+        }
+
+        .carousel__slide {
+            height: 100%;
+            right: 0;
+            position: absolute;
+            overflow-y: auto;
+            top: 0;
+            left: 0;
+        }
+
+        * { 
+            box-sizing: border-box; 
+        }
+
+        body {
+            background-color: darkslategray;
+            text-align: center;
+            color: #fff;
+        }
+
+        .carousel-container { 
+            display: block; 
+                              
+        }
+
+        .my-carousel {
+            margin-block-end: 0px;
+        }
+
+        .carousel__slide {
+          border-radius: 10px;
+          overflow: hidden;
+        }
+/*--------------------------------------------------------------------------------------contenu---------------------------------------------------------------------------------------*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||contenu||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #image1{
+            
+            margin:5% 50px auto 50px; 
+            height: 700px;
+        }
+        @media only screen and (max-width: 1100px) {
+            
+            #image1{ 
+                margin:10% 50px auto 50px; 
+                height: 500px;
+            }
+            
+        }
+        
+        .zone_text{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction:column;
+            align-items: flex-start;
+        }
+        h1 {
+          margin:100px auto 30px auto; 
+          text-align:center; 
+          color: #dcdcc4;
+          font-size: 70px;
+        }
+        
+        
+        h5 { 
+            margin-left: 70px;
+            color: #63b1b1; 
+            font-family: Georgia, serif;
+            font-size: 40px;
+            margin-block-end: 0px;
+        }
+        h6 { 
+            margin-block-end: 0px;
+            font-size: 35px;
+        }
+        .detail{
+            width: 500px;
+            text-align: left;
+        }
+        h3 {
+            font-size: 50px;
+        }
+
+        .carousel__slide:nth-of-type(1) {
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(2) {
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(3) {
+          
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(4) {
+          
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(5) {
+          
+          background-size: cover;
+          background-position: center;
+
+        }
+        @-webkit-keyframes 
+        carousel-show-slide {  from {
+         opacity: 0;
+        }
+
+        to { opacity: 1; }
+        }
+        @keyframes 
+        carousel-show-slide {  from {
+         opacity: 0;
+        }
+
+        to { opacity: 1; }
+        }
+        span{
+            color:  #d98e4e;
+        }
+
+
+        </style>
+        <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="carousel-container">
+            <p class="menu"><a href="menu.html" >MENU</a></p>
+            <h2><span>PRE</span>HISTOIRE</h2>
+            <p class="desc">Il n'y a pas de production artistiques dans cette periode.</p>
+            
+            <ul class="carousel my-carousel carousel--translate">
+                <input type="radio" name="carousel" id="1" checked="checked" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="2" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="3" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="4" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="5" class="carousel__activator"/>
+                <div class="carousel__controls">
+                  <label for="5" class="carousel__control carousel__control--forward"></label>
+                  <label for="2" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="1" class="carousel__control carousel__control--forward"></label>
+                  <label for="3" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="2" class="carousel__control carousel__control--forward"></label>
+                  <label for="4" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="3" class="carousel__control carousel__control--forward"></label>
+                  <label for="5" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="4" class="carousel__control carousel__control--forward"></label>
+                  <label for="1" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__track">
+                    <div class="carousel__slide">
+                        <h1>de <span>-4.2M</span> à <span>-2.5M</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Australopithèque</h5>
+                                <h6>Lieu de vie:</h6>
+                                <p class="detail">Afrique (Éthiopie, Kenya)</p>
+                                <h6>Évolution:</h6>
+                                <p class="detail">Ils étaient capables de marcher debout.</p>
+                            </div>
+                            <img src='image/australopitheque.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>-2.4M</span> à <span>-1.6M</span></h1>
+                        
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Homo Habilis</h5>
+                                <h6>Lieu de vie:</h6>
+                                <p class="detail">Afrique de l'Est et Afrique du Sud</p>
+                                <h6>Évolution:</h6>
+                                <p class="detail">Cette "habilité" à fabriquer des outils qui le distingue des australopithèques lui permettais de découper des morceaux de viande ou de casser des os.</p>
+                            </div>
+                            <img src='image/outil_homo_habilis.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>-1.9M</span> à <span>-300,000</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Homo Erectus</h5>
+                                <h6>Lieu de vie:</h6>
+                                <p class="detail">il apparaît en Afrique vers -2 millions d'années. De là, il part vers d'autres continents, l'Asie et l'Europe, à la recherche de proies devenues rares à la suite de l'assèchement du climat en Afrique.</p>
+                                <h6>Évolution:</h6>
+                                <p class="detail">Les Homo erectus maîtrisaient la taille de la pierre (fabrication de bifaces symétriques). Ce sont les premiers hominidés qui ont maîtrisé le feu.</p>
+                            </div>
+                            <img src='image/homo_erectus.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>-350,000</span> à <span>-35,000</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Homme de Néandertal</h5>
+                                <h6>Lieu de vie:</h6>
+                                <p class="detail">Afrique (Éthiopie, Kenya)</p>
+                                <h6>Évolution:</h6>
+                                <p class="detail">Au Paléolithique moyen apparaissent les premières manifestations de préoccupations esthétiques ou symboliques : utilisation d'ocre, utilisation de plumes, gravure de traits, de lignes ou de signes géométriques simples sur des os ou des pierres.</p>
+                                <h6>Oeuvre:</h6>
+                                <p class="detail"><span>La salle des Taureaux :</span>&nbsp;Les motifs pariétaux de la salle des Taureaux sont les plus imposants de l'art paléolithique. Cet ensemble regroupe 130 figures dont 36 représentations animales, une cinquantaine de signes géométriques, le reste étant des traces d’activité.</p>
+                            </div>
+                            <img src='image/la_salle_des_taureaux.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>-35,000</span> à <span>Aujourd'hui</span></h1>
+                        
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Homo Sapiens</h5>
+                                <h6>Lieu de vie:</h6>
+                                <p class="detail">Originaire d'Afrique, puis répandue sur l'ensemble de la planète hormis l'Antarctique.</p>
+                                <h6>Évolution:</h6>
+                                <p class="detail">l'Homo sapiens se distingue par la complexité de ses relations sociales, l'utilisation d'un langage articulé élaboré transmis par l'apprentissage, la fabrication d'outils, le port de vêtements, la maîtrise du feu, la domestication de nombreuses espèces végétales et animales, ainsi que l'aptitude de son système cognitif à l'abstraction, à l'introspection et à la spiritualité.</p>
+                            </div>
+                            <img src='image/homo_sapiens.jpg' id='image1'/>
+                        </article>
+                    </div>
+                </div>
+            <div class="carousel__indicators">
+                <label for="1" id="c1"class="carousel__indicator">
+                    <h4 >-4.2M</h4>
+                    <div class="cercle" id="cercle1"></div>
+                    <div id="cercle12"></div>
+                </label>
+                <label for="2" id="c2"class="carousel__indicator">
+                    <h4 >-2.4M</h4>
+                    <div class="cercle" id="cercle2"></div>
+                    <div id="cercle22"></div>
+                </label>
+                <label for="3" id="c3"class="carousel__indicator">
+                    <h4 >-1.9M</h4>
+                    <div class="cercle" id="cercle3"></div>
+                    <div id="cercle32"></div>
+                </label>
+                <label for="4" id="c4"class="carousel__indicator">
+                    <h4 >-350,000</h4>
+                    <div class="cercle" id="cercle4"></div>
+                    <div id="cercle42"></div>
+                </label>
+                <label for="5" id="c5"class="carousel__indicator">
+                    <h4 >-35,000</h4>
+                    <div class="cercle" id="cercle5"></div>
+                    <div id="cercle52"></div>
+                </label>
+                
+            </div>
+                <div class="dot"></div> 
+            </ul>
+        </div>
+    </body>
+</html>

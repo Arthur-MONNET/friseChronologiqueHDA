@@ -1,0 +1,683 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Antiquité</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width, height:device-height">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <style>
+            .body{
+                height: 100%;
+                width: 100%;
+            }
+            .dot { 
+                border-bottom: dotted 4px #423100; 
+                margin-top: 53px;
+            } 
+/*--------------------------------------------------site pour le slide: https://www.cssscript.com/pure-css-carousel-slidershow/#respond -----------------------------------------------*/
+        .carousel {
+          height: 1000px;
+          width: 100%;
+          overflow: hidden;
+          text-align: center;
+          position: relative;
+          margin-top: 50px;
+          padding: 0;
+        }
+        h2:checked{ color:red}
+        .carousel__controls, .carousel__slide, .carousel__activator { display: none; }
+        .carousel__activator:nth-of-type(6):checked ~ .carousel__track {
+          -webkit-transform: translateX(-500%);
+          transform: translateX(-500%);
+        }
+        .carousel__activator:nth-of-type(6):checked ~ .carousel__slide:nth-of-type(6) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(6):checked ~ .carousel__controls:nth-of-type(6) { display: block; }
+
+        .carousel__activator:nth-of-type(6):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(6) h4{ color: #c46997; font-size: 35px;}
+        .carousel__activator:nth-of-type(6):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(6) div#cercle62{ display:block; }
+        .carousel__activator:nth-of-type(6):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(6) div#cercle6{ background-color: #c46997;}
+        
+        
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+          -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+        }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) { display: block; }
+
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) h4{ color: #c46997; font-size: 35px;}
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) div#cercle52{ display:block; }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) div#cercle5{ background-color: #c46997;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+          -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+        }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) { display: block; }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) h4{ color: #c46997; font-size: 35px;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) div#cercle42{ display:block;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) div#cercle4{ background-color: #c46997;}
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+          -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+        }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) { display: block; }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) h4{ color: #c46997; font-size: 35px;}
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) div#cercle32{ display:block; }
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) div#cercle3{ background-color: #c46997;}
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) { display: block; }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) h4{ color: #c46997; font-size: 35px;}
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) div#cercle22{ display:block; }
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) div#cercle2{ background-color: #c46997;}
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+        }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) { display: block; }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) h4{ color: #c46997; font-size: 35px; }
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) div#cercle12{display:block; }
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) div#cercle1{ background-color: #c46997;}
+        .carousel__control {
+          height: 30px;
+          width: 30px;
+          margin-top: -15px;
+          top: 50%;
+          position: absolute;
+          display: block;
+          cursor: pointer;
+          border-width: 5px 5px 0 0;
+          border-style: solid;
+          border-color: #b190a1;
+          opacity: 0.35;
+          outline: 0;
+          z-index: 3;
+        }
+
+        .carousel__control:hover { opacity: 1; }
+
+        .carousel__control--forward {
+          left: 10px;
+          -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+        }
+        .menu{
+            top:-50px;
+            left:10px;
+            position: absolute;
+            display: block;
+            color: #53002b; 
+            font-size: 50px;
+            cursor: pointer;
+            font-family: 'Poiret One', cursive;
+        }
+        h2 { 
+            color: #b190a1; 
+            font-size: 50px;
+            width: 390px;
+            margin: 30px auto 20px auto;
+            font-family: Georgia, serif;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        a ~ p{
+            display:none;
+        }
+        .desc{
+            font-style: italic; 
+        }
+        
+        .carousel__control--backward {
+          right: 10px;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        .carousel__indicators {
+          display: flex;
+          position: absolute;
+          top: 10px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        
+        .carousel__indicator {
+            height: 30px;
+        }
+        .cercle{
+            display: block;
+            height: 10px;
+            width: 10px;
+            background-color: #a6a6a6;
+            z-index: 2;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        h4{
+            top:5px;
+            height: 40px;
+            width: 100%;
+            color: #a6a6a6;
+            font-size: 30px;
+            z-index: 2;
+            cursor: pointer;
+            margin: 0 auto 0 auto;
+            font-family: 'Poiret One', cursive;
+        }
+        #cercle1{
+            margin-left: 50%;
+        }
+        #cercle12{
+            margin-left: 50%;
+            display:none;
+            background-color: #ffb7dc; width: 255%;height: 6px; border-radius: 0;margin-top:2px;margin-left: -200%;
+        }
+        #cercle2{
+            margin-left: 50%;
+        }
+        #cercle22{
+            margin-left: 50%;
+            display:none;
+            background-color: #ffb7dc; width: 280%;height: 6px; border-radius: 0; margin-top:2px;
+            
+        }
+        #cercle3{
+            margin-left: 50%;
+        }
+        #cercle32{
+            margin-left: 50%;
+            display:none;
+            background-color: #ffb7dc; width: 266%;height: 6px; border-radius: 0; margin-top:2px;
+        }
+        #cercle4{
+            margin-left: 50%;
+        }
+        #cercle42{
+            margin-left: 50%;
+            display:none;
+            background-color: #ffb7dc; width: 298%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        #cercle5{
+            margin-left: 50%;
+        }
+        #cercle52{
+            margin-left:50%;
+            display:none;
+            background-color: #ffb7dc; width: 165%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        #cercle6{
+            margin-left: 25%;
+        }
+        
+        #c1{
+            margin-left:2.5%;
+            width: 11.5%;
+        }
+        
+        #c2{
+            margin-left:26%;
+            width: 6%;
+        }
+        #c3{
+            margin-left:8.5%;
+            width: 5%;
+        }
+        #c4{
+            margin-left:8.2%;
+            width: 4%;
+        }
+        #c5{
+            margin-left:6.8%;
+            width: 5%;
+        }
+        #c6{
+            margin-left:1%;
+            width: 4%;
+        }
+        @media only screen and (max-width: 1500px) {
+            #cercle5{
+                margin-left: 75%;
+            }
+            #c5{
+                margin-left:5.55%;
+                width: 5%;
+            }
+            #c6{
+                margin-left:2.25%;
+                width: 4%;
+            }
+            #cercle52{
+                margin-left:75%;
+                display:none;
+                background-color: #ffb7dc; width: 165%;height: 6px; border-radius: 0;margin-top:2px;
+            }
+            
+        }
+        @media only screen and (max-width: 1050px) {
+            h4{
+                font-size: 20px;
+            }
+            .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) h4{ color: #c46997; font-size: 25px;}
+            .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) h4{ color: #c46997; font-size: 25px;}
+            .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) h4{ color: #c46997; font-size: 25px;}
+            .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) h4{ color: #c46997; font-size: 25px;}
+            .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) h4{ color: #c46997; font-size: 25px;}
+        }
+        @media only screen and (max-width: 1000px) {
+            body ul{
+                display: none;
+            }
+            
+        }
+        h4:hover { color: #b78da1; }
+            
+        .carousel__track {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          -webkit-transition: -webkit-transform 0.5s ease 0s;
+          transition: -webkit-transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+        }
+
+        .carousel__track .carousel__slide { display: block; }
+
+        .carousel__track .carousel__slide:nth-of-type(1) {
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(2) {
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(3) {
+          -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(4) {
+          -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(5) {
+          -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+        }
+        .carousel__track .carousel__slide:nth-of-type(6) {
+          -webkit-transform: translateX(500%);
+          transform: translateX(500%);
+        }
+
+        .carousel__slide {
+            height: 100%;
+            right: 0;
+            position: absolute;
+            overflow-y: auto;
+            top: 0;
+            left: 0;
+        }
+
+        * { 
+            box-sizing: border-box; 
+        }
+
+        body {
+            background-color:#f9f4f6;
+            text-align: center;
+            color: #505050;
+        }
+
+        .carousel-container { 
+            display: block; 
+                              
+        }
+
+        .my-carousel {
+            margin-block-end: 0px;
+        }
+
+        .carousel__slide {
+          border-radius: 10px;
+          overflow: hidden;
+        }
+/*--------------------------------------------------------------------------------------contenu---------------------------------------------------------------------------------------*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||contenu||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #image1{
+            
+            margin:5% 50px auto 50px; 
+            height: 700px;
+        }
+        @media only screen and (max-width: 1100px) {
+            
+            #image1{ 
+                margin:10% 50px auto 50px; 
+                height: 500px;
+            }
+            
+        }
+        @media only screen and (max-width: 1000px) {
+            
+            #image1{ 
+                height: 400px;
+                margin:15% 50px auto 50px; 
+            }
+            
+        }
+        
+        .zone_text{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction:column;
+            align-items: flex-start;
+        }
+        h1 {
+          margin:100px auto 30px auto; 
+          text-align:center; 
+          color: #b190a1;
+          font-size: 70px;
+        }
+        
+        
+        h5 { 
+            margin-left: 70px;
+            color: #c46997; 
+            font-family: Georgia, serif;
+            font-size: 40px;
+            margin-block-end: 0px;
+        }
+        h6 { 
+            margin-block-end: 0px;
+            font-size: 35px;
+        }
+        .detail{
+            width: 500px;
+            text-align: left;
+        }
+        h3 {
+            font-size: 50px;
+        }
+
+        .carousel__slide:nth-of-type(1) {
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(2) {
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(3) {
+          
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(4) {
+          
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(5) {
+          
+          background-size: cover;
+          background-position: center;
+
+        }
+        .carousel__slide:nth-of-type(6) {
+          
+          background-size: cover;
+          background-position: center;
+
+        }
+        @-webkit-keyframes 
+        carousel-show-slide {  from {
+         opacity: 0;
+        }
+
+        to { opacity: 1; }
+        }
+        @keyframes 
+        carousel-show-slide {  from {
+         opacity: 0;
+        }
+
+        to { opacity: 1; }
+        }
+        span{
+            color:  #c46997;
+        }
+
+
+        </style>
+        <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="carousel-container">
+            <p class="menu"><a href="menu.html" >MENU</a></p>
+            <h2><span>ANTI</span>QUITÉ</h2>
+            <p class="desc">La notion d'esthétique est importante(faire le beau) donc le but n'est plus un rituel mais artistique.</p>
+            
+            <ul class="carousel my-carousel carousel--translate">
+                <input type="radio" name="carousel" id="1" checked="checked" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="2" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="3" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="4" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="5" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="6" class="carousel__activator"/>
+                <div class="carousel__controls">
+                  <label for="6" class="carousel__control carousel__control--forward"></label>
+                  <label for="2" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="1" class="carousel__control carousel__control--forward"></label>
+                  <label for="3" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="2" class="carousel__control carousel__control--forward"></label>
+                  <label for="4" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="3" class="carousel__control carousel__control--forward"></label>
+                  <label for="5" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="4" class="carousel__control carousel__control--forward"></label>
+                  <label for="6" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="5" class="carousel__control carousel__control--forward"></label>
+                  <label for="1" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__track">
+                    <div class="carousel__slide">
+                        <h1>de <span>-3800</span> à <span>-1700</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Art égyptien</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">L'art de l'Égypte antique apparait dès les premiers signes de la culture de Nagada, vers 3800 avant l'ère commune. Certains traits, caractéristiques à une époque, peuvent s'atténuer ou disparaitre à une autre. Mais un grand nombre de ces caractères se sont maintenus sur la très longue durée de l'histoire de l'Égypte antique.</p>
+                                <h6>Spécialités:</h6>
+                                <p class="detail">Les Égyptiens recherchaient, non pas la beauté mais l'efficacité dans les réalisations considérées maintenant comme artistiques.</p>
+                            </div>
+                            <img src='image/art_egypte.png' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>-1050</span> à <span>-700</span></h1>
+                        
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Période Géometrique</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">Le dernier foyer de civilisation s’éteint donc sans qu’on sache pourquoi. On a l’impression d’une régression pendant 4 siècles. L’écriture disparait, plus de trace d’architecture monumentale. On parle d’âge obscur. La guerre de Troie en -1184, puis plus rien jusqu’en -476 avec les Jeux Olympiques. C’est l’époque géométrique nom lié au décor de la céramique retrouvée à Athènes. C’est la première forme d’art indestructible. Une technique grecque : les plages noires,une surface très brillante. Sur les vases, vont être représentés plusieurs processus de funérailles : amphore, scène de prothésis pour les femmes ; cratère athique pour les hommes.</p>
+
+                                
+                            </div>
+                            <img src='image/géometrique.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>-750</span> à <span>-476</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Période archaïque</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">La structuration de la société étrusque et la multiplication des échanges font émerger de nouvelles techniques artistiques. En particulier la peinture connaît un développement spectaculaire : de la décoration des tuiles, elle obtient un statut décoratif et s'applique sur les vases et les fresques.</p>
+                                <h6>Sculpture:</h6>
+                                <p class="detail">Comme pour la poterie, les Grecs ne produisaient pas des sculptures pour des expositions artistiques. Les statues étaient commandées par des aristocrates ou par l'État et utilisées pour des mémoriaux, comme offrandes à des temples, des oracles ou des sanctuaires, ou sur des tombes.</p>
+                            </div>
+                            <img src='image/art_archaique.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>-476</span> à <span>-230</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Période classique</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">La peinture introduit l'un des principaux artifices de la perspective, le raccourci, et connaît un artiste de grand renom: <span>Polygnote de Thasos</span>.</p>
+                                <h6>Évolution:</h6>
+                                <p class="detail">La période classique vit des changements autant dans le style que dans la fonction de la sculpture. Les poses devinrent plus naturelles et la technique évolua beaucoup dans la description du mouvement des corps. À partir du ve siècle av. J.-C., les statues commencèrent à représenter de vraies personnes.</p>
+                            </div>
+                            <img src='image/art_classique.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    
+                    <div class="carousel__slide">
+                        <h1>de <span>-230</span> à <span>-100</span></h1>
+                        
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Période hellénistique</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">La culture grecque s'étendit largement jusqu'à l'Inde. Elle devint ainsi plus diversifiée et plus influencée par les cultures orientales, au détriment de la qualité et de l'originalité des œuvres. De nouveaux centres de la culture grecque se développèrent</p>
+                                <h6>Sculpture:</h6>
+                                <p class="detail">Pendant cette période, la sculpture devint de plus en plus naturaliste. Les gens du peuple, les femmes, les enfants, les animaux et les scènes domestiques devinrent des sujets de sculpture, qui étaient commandées par de riches familles pour l'ornement de leurs maisons et de leurs jardins. Des portraits réalistes d'hommes et de femmes de tous âges furent produits, et les sculpteurs n'étaient plus obligés de les représenter comme des idéaux de beauté et de perfection physique. Exemple de sculpture: la <span>Vénus de Milo</span></p>
+                            </div>
+                            <img src='image/art_helleniste.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1><span>-150</span></h1>
+                        
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Vénus de Milo</h5>
+                                <h6>Auteur:</h6>
+                                <p class="detail">Alexandros d'Antioche</p>
+                                <h6>Date:</h6>
+                                <p class="detail">C'est une œuvre créée vers 150-130 av. J.-C.</p>
+                                <h6>Description:</h6>
+                                <p class="detail">La statue est plus grande (2,02 m) que la taille naturelle. Elle représente vraisemblablement la déesse grecque Aphrodite (Vénus chez les Romains), debout, le torse dénudé et les jambes drapées (très détaillé).Son corps a été fabriqué dès l'origine en deux blocs superposés. Cette technique de fabrication s'est répandue à l'époque hellénistique.</p>
+                            </div>
+                            <img src='image/venus_de_milo.jpg' id='image1'/>
+                        </article>
+                    </div>
+                </div>
+            <div class="carousel__indicators">
+                <label for="1" id="c1"class="carousel__indicator">
+                    <h4 >-1700</h4>
+                    <div class="cercle" id="cercle1"></div>
+                    <div id="cercle12"></div>
+                </label>
+                <label for="2" id="c2"class="carousel__indicator">
+                    <h4 >-1050</h4>
+                    <div class="cercle" id="cercle2"></div>
+                    <div id="cercle22"></div>
+                </label>
+                <label for="3" id="c3"class="carousel__indicator">
+                    <h4 >-750</h4>
+                    <div class="cercle" id="cercle3"></div>
+                    <div id="cercle32"></div>
+                </label>
+                <label for="4" id="c4"class="carousel__indicator">
+                    <h4 >-476</h4>
+                    <div class="cercle" id="cercle4"></div>
+                    <div id="cercle42"></div>
+                </label>
+                <label for="5" id="c5"class="carousel__indicator">
+                    <h4 >-230</h4>
+                    <div class="cercle" id="cercle5"></div>
+                    <div id="cercle52"></div>
+                </label>
+                <label for="6" id="c6"class="carousel__indicator">
+                    <h4 >-150</h4>
+                    <div class="cercle" id="cercle6"></div>
+                </label>
+                
+            </div>
+                <div class="dot"></div> 
+            </ul>
+        </div>
+    </body>
+</html>
+

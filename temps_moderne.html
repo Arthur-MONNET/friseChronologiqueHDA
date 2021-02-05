@@ -1,0 +1,615 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Temps Moderne</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width, height:device-height">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <style>
+            .body{
+                height: 100%;
+                width: 100%;
+            }
+            .dot { 
+                border-bottom: dotted 4px #423100; 
+                margin-top: 53px;
+            } 
+/*--------------------------------------------------site pour le slide: https://www.cssscript.com/pure-css-carousel-slidershow/#respond -----------------------------------------------*/
+        .carousel {
+          height: 1000px;
+          width: 100%;
+          overflow: hidden;
+          text-align: center;
+          position: relative;
+          margin-top: 50px;
+          padding: 0;
+        }
+        h2:checked{ color:red}
+        .carousel__controls, .carousel__slide, .carousel__activator { display: none; }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+          -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+        }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) { display: block; }
+
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) h4{ color: #e3c701; font-size: 35px;}
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) div#cercle52{ display:block; }
+        .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) div#cercle5{ background-color: #e3c701;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+          -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+        }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) { display: block; }
+
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) h4{ color: #e3c701; font-size: 35px;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) div#cercle42{ display:block;}
+        .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) div#cercle4{ background-color: #e3c701;}
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+          -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+        }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) { display: block; }
+
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) h4{ color: #e3c701; font-size: 35px;}
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) div#cercle32{ display:block; }
+        .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) div#cercle3{ background-color: #e3c701;}
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) { display: block; }
+
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) h4{ color: #e3c701; font-size: 35px;}
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) div#cercle22{ display:block; }
+        .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) div#cercle2{ background-color: #e3c701;}
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+        }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+          -webkit-animation: carousel-show-slide 0.5s;
+          animation: carousel-show-slide 0.5s;
+          display: block;
+        }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) { display: block; }
+
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) h4{ color: #e3c701; font-size: 35px; }
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) div#cercle12{display:block; }
+        .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) div#cercle1{ background-color: #e3c701;}
+        .carousel__control {
+          height: 30px;
+          width: 30px;
+          margin-top: -15px;
+          top: 50%;
+          position: absolute;
+          display: block;
+          cursor: pointer;
+          border-width: 5px 5px 0 0;
+          border-style: solid;
+          border-color: #dcdcc4;
+          opacity: 0.35;
+          outline: 0;
+          z-index: 3;
+        }
+
+        .carousel__control:hover { opacity: 1; }
+
+        .carousel__control--forward {
+          left: 10px;
+          -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+        }
+        .menu{
+            top:-50px;
+            left:10px;
+            position: absolute;
+            display: block;
+            color: #a15122; 
+            font-size: 50px;
+            cursor: pointer;
+            font-family: 'Poiret One', cursive;
+        }
+        h2 { 
+            color: #dcdcc4; 
+            font-size: 50px;
+            width: 390px;
+            margin: 30px auto 20px auto;
+            font-family: Georgia, serif;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        .desc{
+            font-style: italic; 
+        }
+        
+        .carousel__control--backward {
+          right: 10px;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        .carousel__indicators {
+          display: flex;
+          position: absolute;
+          top: 10px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        
+        .carousel__indicator {
+            height: 30px;
+        }
+        .cercle{
+            display: block;
+            height: 10px;
+            width: 10px;
+            background-color: #a6a6a6;
+            z-index: 2;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        h4{
+            top:5px;
+            height: 40px;
+            width: 100%;
+            color: #a6a6a6;
+            font-size: 30px;
+            z-index: 2;
+            cursor: pointer;
+            margin: 0 auto 0 auto;
+            font-family: 'Poiret One', cursive;
+        }
+        #cercle1{
+            margin-left: 50%;
+        }
+        #cercle12{
+            margin-left: 50%;
+            display:none;
+            background-color: #a15122; width: 850%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        #cercle2{
+            margin-left: 100%;
+        }
+        
+        #cercle3{
+            margin-left: 0%;
+        }
+        
+        #cercle4{
+            margin-left: 75%;
+        }
+        #cercle42{
+            margin-left: 75%;
+            display:none;
+            background-color: #a15122; width: 1000%;height: 6px; border-radius: 0;margin-top:2px;
+        }
+        #cercle5{
+            margin-left: 25%;
+        }
+        
+        #c1{
+            margin-left:10%;
+            width: 5%;
+        }
+        
+        #c2{
+            margin-left:26%;
+            width: 3%;
+        }
+        #c3{
+            margin-left:1.25%;
+            width: 3%;
+        }
+        #c4{
+            margin-left:16.5%;
+            width: 5%;
+        }
+        #c5{
+            margin-left:1%;
+            width: 3%;
+        }
+        @media only screen and (max-width: 1550px) {
+            #c4{
+                margin-left:15.75%;
+            }
+            #c5{
+                margin-left:3%;
+            }
+            #cercle4{
+                margin-left: 100%;
+            }
+            #cercle42{
+                margin-left: 100%;
+            }
+            #cercle5{
+                margin-left: 0%;
+            }
+            #cercle52{
+                margin-left: 0%;
+            }
+            
+        }
+        @media only screen and (max-width: 1050px) {
+            h4{
+                font-size: 20px;
+            }
+            .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) h4{ color: #e3c701; font-size: 25px;}
+            .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) h4{ color: #e3c701; font-size: 25px;}
+            .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) h4{ color: #e3c701; font-size: 25px;}
+            .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) h4{ color: #e3c701; font-size: 25px;}
+            .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) h4{ color: #e3c701; font-size: 25px;}
+        }
+        @media only screen and (max-width: 1000px) {
+            body ul{
+                display: none;
+            }
+            
+        }
+        h4:hover { color: #a59e6a; }
+            
+        .carousel__track {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          -webkit-transition: -webkit-transform 0.5s ease 0s;
+          transition: -webkit-transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+        }
+
+        .carousel__track .carousel__slide { display: block; }
+
+        .carousel__track .carousel__slide:nth-of-type(1) {
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(2) {
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(3) {
+          -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(4) {
+          -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+        }
+
+        .carousel__track .carousel__slide:nth-of-type(5) {
+          -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+        }
+
+        .carousel__slide {
+            height: 100%;
+            right: 0;
+            position: absolute;
+            overflow-y: auto;
+            top: 0;
+            left: 0;
+        }
+
+        * { 
+            box-sizing: border-box; 
+        }
+
+        body {
+            background-color: #222;
+            text-align: center;
+            color: #fff;
+        }
+
+        .carousel-container { 
+            display: block; 
+                              
+        }
+
+        .my-carousel {
+            margin-block-end: 0px;
+        }
+
+        .carousel__slide {
+          border-radius: 10px;
+          overflow: hidden;
+        }
+/*--------------------------------------------------------------------------------------contenu---------------------------------------------------------------------------------------*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||contenu||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #image1{
+            
+            margin:5% 50px auto 50px; 
+            height: 700px;
+        }
+        @media only screen and (max-width: 1100px) {
+            
+            #image1{ 
+                margin:10% 50px auto 50px; 
+                height: 500px;
+            }
+            
+        }
+        @media only screen and (max-width: 1000px) {
+            
+            #image1{ 
+                height: 400px;
+                margin:15% 50px auto 50px; 
+            }
+            
+        }
+        
+        .zone_text{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction:column;
+            align-items: flex-start;
+        }
+        h1 {
+          margin:100px auto 30px auto; 
+          text-align:center; 
+          color: #dcdcc4;
+          font-size: 70px;
+        }
+        
+        
+        h5 { 
+            margin-left: 70px;
+            color: #a15122; 
+            font-family: Georgia, serif;
+            font-size: 40px;
+            margin-block-end: 0px;
+        }
+        h6 { 
+            margin-block-start: 50px;
+            margin-block-end: 0px;
+            font-size: 35px;
+        }
+        .detail{
+            width: 500px;
+            text-align: left;
+        }
+        h3 {
+            font-size: 50px;
+        }
+
+        .carousel__slide:nth-of-type(1) {
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(2) {
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(3) {
+          
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(4) {
+          
+          background-size: cover;
+          background-position: center;
+        }
+
+        .carousel__slide:nth-of-type(5) {
+          
+          background-size: cover;
+          background-position: center;
+
+        }
+        @-webkit-keyframes 
+        carousel-show-slide {  from {
+         opacity: 0;
+        }
+
+        to { opacity: 1; }
+        }
+        @keyframes 
+        carousel-show-slide {  from {
+         opacity: 0;
+        }
+
+        to { opacity: 1; }
+        }
+        span{
+            color:  #e3c701;
+        }
+
+
+        </style>
+        <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="carousel-container">
+            <p class="menu"><a href="menu.html" >MENU</a></p>
+            <h2><span>TEMPS</span>&nbsp;MODERNE</h2>
+            <p class="desc">Pour la première fois, l'art pénètre dans la sphère du privé : les œuvres ne sont plus seulement commandées par le pouvoir religieux ou séculier, mais entrent dans les maisons bourgeoises.</p>
+            
+            <ul class="carousel my-carousel carousel--translate">
+                <input type="radio" name="carousel" id="1" checked="checked" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="2" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="3" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="4" class="carousel__activator"/>
+                <input type="radio" name="carousel" id="5" class="carousel__activator"/>
+                <div class="carousel__controls">
+                  <label for="5" class="carousel__control carousel__control--forward"></label>
+                  <label for="2" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="1" class="carousel__control carousel__control--forward"></label>
+                  <label for="3" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="2" class="carousel__control carousel__control--forward"></label>
+                  <label for="4" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="3" class="carousel__control carousel__control--forward"></label>
+                  <label for="5" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label for="4" class="carousel__control carousel__control--forward"></label>
+                  <label for="1" class="carousel__control carousel__control--backward"></label>
+                </div>
+                <div class="carousel__track">
+                    <div class="carousel__slide">
+                        <h1>de <span>1400</span> à <span>1550</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>La Renaissance</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">C'est une période d’invention et d’innovation technique et artistique importante, les artistes sont des intellectuels au sens où ils maîtrisent à la fois des techniques artistiques et des théories, ils sont à la fois capables de travailler de manière manuelle et de manière abstraite.</p>
+                                <h6>Artistes:</h6>
+                                <p class="detail">Léonard de Vinci (1452 - 1519)<br>Michel - Ange (1475 - 1564)<br>Raphaël Santi (1483 - 1520)</p>
+                            </div>
+                            <img src='image/renaissance.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1><span>1514</span></h1>
+                        
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Camera Obscura</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">Une chambre noire (en latin « camera obscura ») est un instrument optique objectif qui permet d'obtenir une projection de la lumière sur une surface plane, c'est-à-dire d'obtenir une vue en deux dimensions très proche de la vision humaine. </p>
+                                <h6>Principe:</h6>
+                                <p class="detail">En 1514,&nbsp;<span>Léonard de Vinci</span>&nbsp;explique son principe, Comme la lumière est réfléchie par les objets dans toutes les directions suivant leurs qualités propres d'absorption, de réflexion, de diffusion, chaque point de la surface d'un écran reçoit des rayons lumineux issus de tous les objets alentour. </p>
+                            </div>
+                            <img src='image/camera_obscura.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1><span>1519</span></h1>
+                        
+                        <article>
+                            <div class='zone_text'>
+                                <h5>La Joconde</h5>
+                                <h6>Auteur:</h6>
+                                <p class="detail">Léonard de Vinci</p>
+                                <h6>Date:</h6>
+                                <p class="detail">Réalisé de 1503 jusqu'en 1519</p>
+                                <h6>Description:</h6>
+                                <p class="detail">Mona Lisa est assise dans une loggia, une sorte de balcon. Derrière elle, on voit le paysage qu’elle regarde d’habitude: Des vallées, un fleuve avec un pont, des chemins qui serpentent et guident le regard jusqu’au fond de l’image. Le paysage paraît flou, Léonard de Vinci traduit la réalité observée avec honnêteté, on ne voit pas tout parfaitement, notre oeil fonctionne comme un appareil photo qui fait une mise au point sur certains éléments et laisse lesautres flous. C’est le cas du paysage ici, puisque le portrait est net et détaillé. Le peintre à mis au point une technique appelée sfumato (dégradé en italien) qui permet de passer d’un plan à l’autre de l’image de manière douce, sans limites nettes ou contours aux lignes dures. Plus on s’éloigne, plus le paysage se fond dans une sorte de brume, jusqu’aux montagnes qui se confondent avec le ciel.</p>
+                            </div>
+                            <img src='image/joconde.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1>de <span>1600</span> à <span>1750</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>Le Baroque</h5>
+                                <h6>Description:</h6>
+                                <p class="detail">Cette période est marquée par les conflits religieux, et des nouveautés dans l’art religieux comme le paysage. Le style baroque élargit le champ de l’art.</p>
+                                <h6>Techniques:</h6>
+                                <p class="detail">Le clair–obscur, Nature Morte, Fond neutre, Cadrage serré, Scène de genre</p>
+                                <h6>Artistes:</h6>
+                                <p class="detail">Le Caravage (1571 - 1610)<br>Pierre Paul Rubens (1577 - 1640)<br>Diego Velazquez (1599 - 1660)<br>Rembrandt (1606 - 1669)</p>
+                            </div>
+                            <img src='image/baroque.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    <div class="carousel__slide">
+                        <h1><span>1612</span></h1>
+                        <article>
+                            <div class='zone_text'>
+                                <h5>La Descente de Croix</h5>
+                                <h6>Auteur:</h6>
+                                <p class="detail">Paul Rubens </p>
+                                <h6>Date:</h6>
+                                <p class="detail">Réalisé de 1612 à 1614</p>
+                                <h6>Description:</h6>
+                                <p class="detail">Bien que réalisé dans un style essentiellement baroque, cette huile sur toile est étroitement liée à la tradition vénitienne. Le tableau illustre le thème de l’eucharistie. D'abord par la représentation de la nappe de l’autel, symbolisée par le linceul, sur lequel le corps du christ est descendu entre les mains tendues du prêtre qui célèbre l'eucharistie. Ensuite, par la position des personnages, les lèvres de Marie-Madeleine posées sur la main ensanglantée du Christ et le visage de Jean proche de la plaie ouverte sur son flanc.</p>
+                            </div>
+                            <img src='image/la_descente_de_croix.jpg' id='image1'/>
+                        </article>
+                    </div>
+                    
+                </div>
+            <div class="carousel__indicators">
+                <label for="1" id="c1"class="carousel__indicator">
+                    <h4 >1400</h4>
+                    <div class="cercle" id="cercle1"></div>
+                    <div id="cercle12"></div>
+                </label>
+                <label for="2" id="c2"class="carousel__indicator">
+                    <h4 >1514</h4>
+                    <div class="cercle" id="cercle2"></div>
+                    <div id="cercle22"></div>
+                </label>
+                <label for="3" id="c3"class="carousel__indicator">
+                    <h4 >1519</h4>
+                    <div class="cercle" id="cercle3"></div>
+                    <div id="cercle32"></div>
+                </label>
+                <label for="4" id="c4"class="carousel__indicator">
+                    <h4>1600</h4>
+                    <div class="cercle" id="cercle4"></div>
+                    <div id="cercle42"></div>
+                </label>
+                <label for="5" id="c5"class="carousel__indicator">
+                    <h4 >1612</h4>
+                    <div class="cercle" id="cercle5"></div>
+                    <div id="cercle52"></div>
+                </label>
+                
+            </div>
+                <div class="dot"></div> 
+            </ul>
+        </div>
+    </body>
+</html>
