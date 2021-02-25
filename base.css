@@ -1,0 +1,24 @@
+.body {
+    height: 100%;
+    width: 100%;
+}
+
+.dot {
+    border-bottom: dotted 4px #423100;
+    margin-top: 53px;
+}
+
+/*--------------------------------------------------site pour le slide: https://www.cssscript.com/pure-css-carousel-slidershow/#respond -----------------------------------------------*/
+.carousel {
+    height: 1000px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    padding: 0;
+}
+
+h2:checked {
+    color: red
+}
