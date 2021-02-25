@@ -1,4 +1,4 @@
-
+@import "base.css";
 
 .carousel__controls, .carousel__slide, .carousel__activator {
     display: none;
